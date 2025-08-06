@@ -1,7 +1,7 @@
 @include('dashboard')
 <title>Messagerie</title>
 <meta name="csrf-token" content="{{ csrf_token() }}">
-@vite(['resources/css/messages.css'])
+<link rel="stylesheet" href="{{ asset('css/messages.css') }}">
 <main class="messagerie-wrapper">
   <div class="messagerie-container">
 

@@ -1,5 +1,5 @@
 @include('employer.dashboardemployer')
-@vite(['resources/css/compte-rendu.css'])
+link rel="stylesheet" href="{{ asset('css/compte-rendu.css') }}">
 <title>Annonces</title>
 <main style="position:absolute;left:300px;top:120px;">
     <div class="container">

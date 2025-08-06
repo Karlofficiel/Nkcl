@@ -1,6 +1,6 @@
 @include('employer.dashboardemployer')
 <title>Messagerie</title>
-@vite(['resources/css/messages.css'])
+<link rel="stylesheet" href="{{ asset('css/messages.css') }}">
 <main class="messagerie-wrapper">
   <div class="messagerie-container">
 

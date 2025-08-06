@@ -1,6 +1,6 @@
 @include('employer.dashboardemployer')
 <title>Profil Page</title>
-@vite(['resources/css/statistique.css'])
+<link rel="stylesheet" href="{{ asset('css/statistique.css') }}">
 
 <style>
     table {

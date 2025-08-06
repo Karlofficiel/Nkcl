@@ -1,6 +1,6 @@
 @include('dashboard')
 <title>Formtache</title>
-@vite(['resources/css/formtache.css'])
+<link rel="stylesheet" href="{{ asset('css/formtache.css') }}">
 <main style="position:absolute; left:300px; top:120px;">
     @if(session('success'))
         <div class="alert-success">

@@ -1,7 +1,7 @@
  @include('dashboard')
  <title>Profil Page</title>
-@vite(['resources/css/tabtache.css'])
-@vite(['resources/css/statistique.css'])
+ <link rel="stylesheet" href="{{ asset('css/statistique.css') }}">
+ <link rel="stylesheet" href="{{ asset('css/profile.css') }}">
 <main style="position:absolute;left:300px;top:120px;">
 <div class="welcome-message">
   Bonjour {{ Auth::user()->name }}, Bienvenue sur votre page Admin.

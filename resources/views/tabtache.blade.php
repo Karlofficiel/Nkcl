@@ -1,5 +1,5 @@
 @include('dashboard')
-@vite(['resources/css/tabtache.css'])
+<link rel="stylesheet" href="{{ asset('css/tabtache.css') }}">
 <title>TabTache</title>
 <main style="position:absolute; left:300px; top:120px;">
   <h1>Mes Tâches</h1>

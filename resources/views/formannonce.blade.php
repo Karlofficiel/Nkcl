@@ -1,6 +1,6 @@
 @include('dashboard')
 <title>Form Annonces</title>
-@vite(['resources/css/formannonce.css'])
+<link rel="stylesheet" href="{{ asset('css/formannonce.css') }}">
 <main style="position:absolute; left:300px; top:120px;">
     <h1>Publier une Annonce</h1>
       @if(session('success'))

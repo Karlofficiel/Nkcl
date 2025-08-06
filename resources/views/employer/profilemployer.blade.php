@@ -1,6 +1,6 @@
 @include('employer.dashboardemployer')
 <title>Profil Page</title>
-@vite(['resources/css/profile.css'])
+<link rel="stylesheet" href="{{ asset('css/profile.css') }}">
 <main style="position:absolute;left:300px;top:120px;">
 
   @if(session('success'))
