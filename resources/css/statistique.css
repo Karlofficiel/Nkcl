@@ -1,0 +1,128 @@
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px;
+  background-color: #f8fafc;
+  flex-wrap: wrap;
+}
+
+.summary-card {
+  flex: 1;
+  min-width: 280px;
+  background-color: #ffffff;
+  padding: 20px;
+  padding-bottom: 35px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.summary-card:hover {
+  transform: translateY(-4px);
+}
+
+.summary-card h3 {
+  font-size: 16px;
+  color: #1e293b;
+  margin: 0 0 10px;
+}
+
+.summary-card p {
+  font-size: 14px;
+  color: #334155;
+  margin: 0;
+}
+
+/* Bande invisible par défaut */
+.card-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  transition: height 0.3s ease, background-color 0.3s ease;
+  z-index: 1;
+}
+
+/* Active la bande au hover */
+.summary-card:hover .card-footer {
+  height: 5px;
+}
+
+/* Couleurs spécifiques au hover */
+.green:hover .card-footer {
+  background-color: #10b981; /* vert */
+}
+
+.orange:hover .card-footer {
+  background-color: #f97316; /* orange */
+}
+
+.blue:hover .card-footer {
+  background-color: #3b82f6; /* bleu */
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+
+  /* à supprimer si tu veux aucun fond visible autour */
+  background-color: transparent; /* ou retire cette ligne si elle existe */
+  box-shadow: none; /* si présent */
+
+  /* Pour t'assurer qu'il n'y ait aucun bord visible */
+  border: none;
+}
+.welcome-message {
+  font-family: 'Gabriola', cursive;
+  font-size: 32px;
+  margin-top: 10px;
+  color: #1f2937;
+}
+
+/* Conteneur formulaire recherche */
+.form-search {
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+/* Input recherche */
+.form-search input[type="text"] {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  color: #000;
+  border-radius: 5px;
+  background-color: #f7f6f6;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.form-search input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Bouton Rechercher */
+.form-search button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.form-search button:hover {
+  background-color: #0056b3;
+}
