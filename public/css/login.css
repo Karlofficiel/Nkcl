@@ -1,0 +1,90 @@
+
+  body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .main-title {
+      color: #28a745;
+      font-size: 50px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      font-family: Gabriola, cursive;
+    }
+
+    .login-box {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+      background-color: #28a745;
+      color: white;
+    }
+
+    form button:hover {
+      background-color: #1e7e34;
+    }
+
+    input, button, h2 {
+      font-family:'Times New Roman', Times, serif;
+    }
+
+    .redirect-link {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .redirect-link a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .redirect-link a:hover {
+      text-decoration: underline;
+    }
+    .success-message {
+    color: green;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
